@@ -1,0 +1,91 @@
+
+//+------------------------------------------------------------------+
+//|                                                      WH DrawFib Pro MT5 |
+//|                                 Copyright © 2021, Forex Robot Easy Team |
+//|                                        https://www.forexroboteasy.com |
+//+------------------------------------------------------------------+
+#property strict
+
+// Global variables
+double fibLevel1, fibLevel2;
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Set Fibonacci levels for trend reversal identification
+    fibLevel1 = 0.382;
+    fibLevel2 = 0.618;
+
+    // Initialize other necessary components and indicators
+    // ...
+
+    return INIT_SUCCEEDED;
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Clean up and release resources
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Identify current market trend
+    // ...
+
+    // Check for trend reversal using Fibonacci levels
+    if (IsTrendReversal())
+    {
+        // Predict price movements based on trend reversal
+        // ...
+
+        // Display history of Highs and Lows for trend insights
+        DisplayHistory();
+
+        // Make profitable decisions based on analysis
+        MakeTradingDecisions();
+    }
+}
+
+//+------------------------------------------------------------------+
+//| Function to check for trend reversal using Fibonacci levels       |
+//+------------------------------------------------------------------+
+bool IsTrendReversal()
+{
+    // Implement logic to check for trend reversal using Fibonacci levels
+    // ...
+
+    return true; // Return true if trend reversal is identified
+}
+
+//+------------------------------------------------------------------+
+//| Function to display history of Highs and Lows                     |
+//+------------------------------------------------------------------+
+void DisplayHistory()
+{
+    // Show history of Highs and Lows for valuable trend insights
+    // ...
+
+    // Display the information on the user-friendly interface
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Function to make profitable trading decisions based on analysis  |
+//+------------------------------------------------------------------+
+void MakeTradingDecisions()
+{
+    // Implement logic to make profitable trading decisions
+    // ...
+
+    // Execute necessary trading functions to support the algorithm
+    // ...
+}
